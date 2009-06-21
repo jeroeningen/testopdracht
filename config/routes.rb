@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect '/', :controller => 'users'
   map.connect 'users/destroy/:id', :controller => 'users', :action => 'destroy', :id => :id
   map.resources :users
   map.resources :addresses
