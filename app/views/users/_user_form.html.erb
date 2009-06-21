@@ -1,0 +1,38 @@
+<% form_for(@user, :html =>{ :id => 'userform', :onsubmit => "return false"}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </p>
+  <p>
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </p>
+  <p>
+    <%= f.label :zipcode %><br />
+    <%= f.text_field(:zipcode,
+      {:onblur => resolve_address
+        }
+    ) %>
+
+  </p>
+  <p>
+    <%= f.label :country_id %><br />
+    <%= f.select :country_id, Country.all.collect {|c| [c.country_name_en, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :street %><br />
+    <%= f.text_field :street %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <label>You are living nearby:</label>
+  <div id="zipResult"></div>
+
+  <p>
+    <%= f.submit 'Update', :onclick => "Modalbox.show(this.form.action, {method: 'post', params: Form.serialize('userform'), afterHide: function() {document.location='" + users_url + "'}})"  %>
+  </p>
+<% end %>

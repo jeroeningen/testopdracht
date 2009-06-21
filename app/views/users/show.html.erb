@@ -1,0 +1,17 @@
+  <h2><%=h @user.firstname + " " + @user.lastname%></h2>
+  <div class="title">Firstname:</div>
+  <div class="description"><%=h @user.firstname %></div>
+  <div class="title">Lastname:</div>
+  <div class="description"><%=h @user.lastname %></div>
+  <div class="title">Zipcode:</div>
+  <div class="description"><%=h @user.zipcode %></div>
+  <div class="title">Country:</div>
+  <div class="description"><%=h @user.country.country_name_en %></div>
+  <div class="title">Street:</div>
+  <div class="description"><%=h @user.street %></div>
+  <div class="title">City:</div>
+  <div class="description"><%=h @user.city %></div>
+
+
+<%= link_to 'Edit', edit_user_path(@user), :onclick => "Modalbox.show('" + edit_user_path(@user) + "', {afterLoad: function() {"+ resolve_address + "}}); return false;" %> |
+<%= link_to 'Back', {}, :onclick => "Modalbox.hide(); return false;" %>

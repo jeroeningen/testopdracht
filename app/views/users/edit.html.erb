@@ -1,0 +1,7 @@
+<h1>Editing user</h1>
+<div>
+<%= render :partial => 'user_form' %>
+
+<%= link_to 'Show', {}, :onclick => "Modalbox.show('" + user_path(@user) + "'); return false;" %> |
+<%= link_to 'Back', {}, :onclick => "Modalbox.hide(); return false;" %>
+</div>

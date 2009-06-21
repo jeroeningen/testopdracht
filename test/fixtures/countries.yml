@@ -1,0 +1,1685 @@
+country_1:
+  id: 1
+  country_code: "AF"
+  country_name_en: "Afghanistan"
+
+country_2:
+  id: 2
+  country_code: "AL"
+  country_name_en: "Albania"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_3:
+  id: 3
+  country_code: "DZ"
+  country_name_en: "Algeria"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_4:
+  id: 4
+  country_code: "AS"
+  country_name_en: "American Samoa"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_5:
+  id: 5
+  country_code: "AD"
+  country_name_en: "Andorra"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_6:
+  id: 6
+  country_code: "AO"
+  country_name_en: "Angola"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_7:
+  id: 7
+  country_code: "AI"
+  country_name_en: "Anguilla"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_8:
+  id: 8
+  country_code: "AQ"
+  country_name_en: "Antarctica"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_9:
+  id: 9
+  country_code: "AG"
+  country_name_en: "Antigua and Barbuda"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_10:
+  id: 10
+  country_code: "AR"
+  country_name_en: "Argentina"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_11:
+  id: 11
+  country_code: "AM"
+  country_name_en: "Armenia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_12:
+  id: 12
+  country_code: "AW"
+  country_name_en: "Aruba"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_13:
+  id: 13
+  country_code: "AU"
+  country_name_en: "Australia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_14:
+  id: 14
+  country_code: "AT"
+  country_name_en: "Austria"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_15:
+  id: 15
+  country_code: "AZ"
+  country_name_en: "Azerbaidjan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_16:
+  id: 16
+  country_code: "BS"
+  country_name_en: "Bahamas"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_17:
+  id: 17
+  country_code: "BH"
+  country_name_en: "Bahrain"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_18:
+  id: 18
+  country_code: "BD"
+  country_name_en: "Banglades"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_19:
+  id: 19
+  country_code: "BB"
+  country_name_en: "Barbados"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_20:
+  id: 20
+  country_code: "BY"
+  country_name_en: "Belarus"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_21:
+  id: 21
+  country_code: "BE"
+  country_name_en: "Belgium"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_22:
+  id: 22
+  country_code: "BZ"
+  country_name_en: "Belize"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_23:
+  id: 23
+  country_code: "BJ"
+  country_name_en: "Benin"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_24:
+  id: 24
+  country_code: "BM"
+  country_name_en: "Bermuda"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_25:
+  id: 25
+  country_code: "BO"
+  country_name_en: "Bolivia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_26:
+  id: 26
+  country_code: "BA"
+  country_name_en: "Bosnia-Herzegovina"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_27:
+  id: 27
+  country_code: "BW"
+  country_name_en: "Botswana"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_28:
+  id: 28
+  country_code: "BV"
+  country_name_en: "Bouvet Island"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_29:
+  id: 29
+  country_code: "BR"
+  country_name_en: "Brazil"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_30:
+  id: 30
+  country_code: "IO"
+  country_name_en: "British Indian O. Terr."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_31:
+  id: 31
+  country_code: "BN"
+  country_name_en: "Brunei Darussalam"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_32:
+  id: 32
+  country_code: "BG"
+  country_name_en: "Bulgaria"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_33:
+  id: 33
+  country_code: "BF"
+  country_name_en: "Burkina Faso"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_34:
+  id: 34
+  country_code: "BI"
+  country_name_en: "Burundi"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_35:
+  id: 35
+  country_code: "BT"
+  country_name_en: "Buthan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_36:
+  id: 36
+  country_code: "KH"
+  country_name_en: "Cambodia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_37:
+  id: 37
+  country_code: "CM"
+  country_name_en: "Cameroon"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_38:
+  id: 38
+  country_code: "CA"
+  country_name_en: "Canada"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_39:
+  id: 39
+  country_code: "CV"
+  country_name_en: "Cape Verde"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_40:
+  id: 40
+  country_code: "KY"
+  country_name_en: "Cayman Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_41:
+  id: 41
+  country_code: "CF"
+  country_name_en: "Central African Rep."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_42:
+  id: 42
+  country_code: "TD"
+  country_name_en: "Chad"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_43:
+  id: 43
+  country_code: "CL"
+  country_name_en: "Chile"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_44:
+  id: 44
+  country_code: "CN"
+  country_name_en: "China"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_45:
+  id: 45
+  country_code: "CX"
+  country_name_en: "Christmas Island"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_46:
+  id: 46
+  country_code: "CC"
+  country_name_en: "Cocos (Keeling) Isl."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_47:
+  id: 47
+  country_code: "CO"
+  country_name_en: "Colombia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_48:
+  id: 48
+  country_code: "KM"
+  country_name_en: "Comoros"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_49:
+  id: 49
+  country_code: "CG"
+  country_name_en: "Congo"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_50:
+  id: 50
+  country_code: "CK"
+  country_name_en: "Cook Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_51:
+  id: 51
+  country_code: "CR"
+  country_name_en: "Costa Rica"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_52:
+  id: 52
+  country_code: "HR"
+  country_name_en: "Croatia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_53:
+  id: 53
+  country_code: "CU"
+  country_name_en: "Cuba"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_54:
+  id: 54
+  country_code: "CY"
+  country_name_en: "Cyprus"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_55:
+  id: 55
+  country_code: "CZ"
+  country_name_en: "Czech Republic"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_56:
+  id: 56
+  country_code: "CS"
+  country_name_en: "Czechoslovakia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_57:
+  id: 57
+  country_code: "DK"
+  country_name_en: "Denmark"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_58:
+  id: 58
+  country_code: "DJ"
+  country_name_en: "Djibouti"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_59:
+  id: 59
+  country_code: "DM"
+  country_name_en: "Dominica"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_60:
+  id: 60
+  country_code: "DO"
+  country_name_en: "Dominican Republic"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_61:
+  id: 61
+  country_code: "TP"
+  country_name_en: "East Timor"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_62:
+  id: 62
+  country_code: "EC"
+  country_name_en: "Ecuador"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_63:
+  id: 63
+  country_code: "EG"
+  country_name_en: "Egypt"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_64:
+  id: 64
+  country_code: "SV"
+  country_name_en: "El Salvador"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_65:
+  id: 65
+  country_code: "GQ"
+  country_name_en: "Equatorial Guinea"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_66:
+  id: 66
+  country_code: "EE"
+  country_name_en: "Estonia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_67:
+  id: 67
+  country_code: "ET"
+  country_name_en: "Ethiopia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_68:
+  id: 68
+  country_code: "FK"
+  country_name_en: "Falkland Isl.(UK)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_69:
+  id: 69
+  country_code: "FO"
+  country_name_en: "Faroe Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_70:
+  id: 70
+  country_code: "FJ"
+  country_name_en: "Fiji"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_71:
+  id: 71
+  country_code: "FI"
+  country_name_en: "Finland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_72:
+  id: 72
+  country_code: "FR"
+  country_name_en: "France"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_73:
+  id: 73
+  country_code: "FX"
+  country_name_en: "France (European Ter.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_74:
+  id: 74
+  country_code: "TF"
+  country_name_en: "French Southern Terr."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_75:
+  id: 75
+  country_code: "GA"
+  country_name_en: "Gabon"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_76:
+  id: 76
+  country_code: "GM"
+  country_name_en: "Gambia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_77:
+  id: 77
+  country_code: "GE"
+  country_name_en: "Georgia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_78:
+  id: 78
+  country_code: "DE"
+  country_name_en: "Germany"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_79:
+  id: 79
+  country_code: "GH"
+  country_name_en: "Ghana"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_80:
+  id: 80
+  country_code: "GI"
+  country_name_en: "Gibraltar"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_81:
+  id: 81
+  country_code: "GB"
+  country_name_en: "Great Britain (UK)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_82:
+  id: 82
+  country_code: "GR"
+  country_name_en: "Greece"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_83:
+  id: 83
+  country_code: "GL"
+  country_name_en: "Greenland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_84:
+  id: 84
+  country_code: "GD"
+  country_name_en: "Grenada"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_85:
+  id: 85
+  country_code: "GP"
+  country_name_en: "Guadeloupe (Fr.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_86:
+  id: 86
+  country_code: "GU"
+  country_name_en: "Guam (US)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_87:
+  id: 87
+  country_code: "GT"
+  country_name_en: "Guatemala"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_88:
+  id: 88
+  country_code: "GN"
+  country_name_en: "Guinea"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_89:
+  id: 89
+  country_code: "GW"
+  country_name_en: "Guinea Bissau"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_90:
+  id: 90
+  country_code: "GY"
+  country_name_en: "Guyana"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_91:
+  id: 91
+  country_code: "GF"
+  country_name_en: "Guyana (Fr.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_92:
+  id: 92
+  country_code: "HT"
+  country_name_en: "Haiti"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_93:
+  id: 93
+  country_code: "HM"
+  country_name_en: "Heard & McDonald Isl."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_94:
+  id: 94
+  country_code: "HN"
+  country_name_en: "Honduras"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_95:
+  id: 95
+  country_code: "HK"
+  country_name_en: "Hong Kong"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_96:
+  id: 96
+  country_code: "HU"
+  country_name_en: "Hungary"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_97:
+  id: 97
+  country_code: "IS"
+  country_name_en: "Iceland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_98:
+  id: 98
+  country_code: "IN"
+  country_name_en: "India"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_99:
+  id: 99
+  country_code: "ID"
+  country_name_en: "Indonesia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_100:
+  id: 100
+  country_code: "IR"
+  country_name_en: "Iran"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_101:
+  id: 101
+  country_code: "IQ"
+  country_name_en: "Iraq"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_102:
+  id: 102
+  country_code: "IE"
+  country_name_en: "Ireland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_103:
+  id: 103
+  country_code: "IL"
+  country_name_en: "Israel"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_104:
+  id: 104
+  country_code: "IT"
+  country_name_en: "Italy"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_105:
+  id: 105
+  country_code: "CI"
+  country_name_en: "Ivory Coast"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_106:
+  id: 106
+  country_code: "JM"
+  country_name_en: "Jamaica"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_107:
+  id: 107
+  country_code: "JP"
+  country_name_en: "Japan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_108:
+  id: 108
+  country_code: "JO"
+  country_name_en: "Jordan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_109:
+  id: 109
+  country_code: "KZ"
+  country_name_en: "Kazachstan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_110:
+  id: 110
+  country_code: "KE"
+  country_name_en: "Kenya"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_111:
+  id: 111
+  country_code: "KG"
+  country_name_en: "Kirgistan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_112:
+  id: 112
+  country_code: "KI"
+  country_name_en: "Kiribati"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_113:
+  id: 113
+  country_code: "KP"
+  country_name_en: "Korea (North)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_114:
+  id: 114
+  country_code: "KR"
+  country_name_en: "Korea (South)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_115:
+  id: 115
+  country_code: "KW"
+  country_name_en: "Kuwait"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_116:
+  id: 116
+  country_code: "LA"
+  country_name_en: "Laos"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_117:
+  id: 117
+  country_code: "LV"
+  country_name_en: "Latvia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_118:
+  id: 118
+  country_code: "LB"
+  country_name_en: "Lebanon"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_119:
+  id: 119
+  country_code: "LS"
+  country_name_en: "Lesotho"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_120:
+  id: 120
+  country_code: "LR"
+  country_name_en: "Liberia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_121:
+  id: 121
+  country_code: "LY"
+  country_name_en: "Libya"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_122:
+  id: 122
+  country_code: "LI"
+  country_name_en: "Liechtenstein"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_123:
+  id: 123
+  country_code: "LT"
+  country_name_en: "Lithuania"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_124:
+  id: 124
+  country_code: "LU"
+  country_name_en: "Luxembourg"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_125:
+  id: 125
+  country_code: "MO"
+  country_name_en: "Macau"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_126:
+  id: 126
+  country_code: "MG"
+  country_name_en: "Madagascar"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_127:
+  id: 127
+  country_code: "MW"
+  country_name_en: "Malawi"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_128:
+  id: 128
+  country_code: "MY"
+  country_name_en: "Malaysia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_129:
+  id: 129
+  country_code: "MV"
+  country_name_en: "Maldives"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_130:
+  id: 130
+  country_code: "ML"
+  country_name_en: "Mali"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_131:
+  id: 131
+  country_code: "MT"
+  country_name_en: "Malta"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_132:
+  id: 132
+  country_code: "MH"
+  country_name_en: "Marshall Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_133:
+  id: 133
+  country_code: "MQ"
+  country_name_en: "Martinique (Fr.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_134:
+  id: 134
+  country_code: "MR"
+  country_name_en: "Mauritania"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_135:
+  id: 135
+  country_code: "MU"
+  country_name_en: "Mauritius"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_136:
+  id: 136
+  country_code: "MX"
+  country_name_en: "Mexico"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_137:
+  id: 137
+  country_code: "FM"
+  country_name_en: "Micronesia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_138:
+  id: 138
+  country_code: "MD"
+  country_name_en: "Moldavia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_139:
+  id: 139
+  country_code: "MC"
+  country_name_en: "Monaco"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_140:
+  id: 140
+  country_code: "MN"
+  country_name_en: "Mongolia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_141:
+  id: 141
+  country_code: "MS"
+  country_name_en: "Montserrat"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_142:
+  id: 142
+  country_code: "MA"
+  country_name_en: "Morocco"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_143:
+  id: 143
+  country_code: "MZ"
+  country_name_en: "Mozambique"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_144:
+  id: 144
+  country_code: "MM"
+  country_name_en: "Myanmar"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_145:
+  id: 145
+  country_code: "NA"
+  country_name_en: "Namibia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_146:
+  id: 146
+  country_code: "NR"
+  country_name_en: "Nauru"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_147:
+  id: 147
+  country_code: "NP"
+  country_name_en: "Nepal"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_148:
+  id: 148
+  country_code: "AN"
+  country_name_en: "Netherland Antilles"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_149:
+  id: 149
+  country_code: "NL"
+  country_name_en: "Netherlands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_150:
+  id: 150
+  country_code: "NT"
+  country_name_en: "Neutral Zone"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_151:
+  id: 151
+  country_code: "NC"
+  country_name_en: "New Caledonia (Fr.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_152:
+  id: 152
+  country_code: "NZ"
+  country_name_en: "New Zealand"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_153:
+  id: 153
+  country_code: "NI"
+  country_name_en: "Nicaragua"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_154:
+  id: 154
+  country_code: "NE"
+  country_name_en: "Niger"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_155:
+  id: 155
+  country_code: "NG"
+  country_name_en: "Nigeria"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_156:
+  id: 156
+  country_code: "NU"
+  country_name_en: "Niue"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_157:
+  id: 157
+  country_code: "NF"
+  country_name_en: "Norfolk Island"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_158:
+  id: 158
+  country_code: "MP"
+  country_name_en: "Northern Mariana Isl."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_159:
+  id: 159
+  country_code: "NO"
+  country_name_en: "Norway"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_160:
+  id: 160
+  country_code: "OM"
+  country_name_en: "Oman"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_161:
+  id: 161
+  country_code: "PK"
+  country_name_en: "Pakistan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_162:
+  id: 162
+  country_code: "PW"
+  country_name_en: "Palau"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_163:
+  id: 163
+  country_code: "PA"
+  country_name_en: "Panama"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_164:
+  id: 164
+  country_code: "PG"
+  country_name_en: "Papua New"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_165:
+  id: 165
+  country_code: "PY"
+  country_name_en: "Paraguay"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_166:
+  id: 166
+  country_code: "PE"
+  country_name_en: "Peru"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_167:
+  id: 167
+  country_code: "PH"
+  country_name_en: "Philippines"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_168:
+  id: 168
+  country_code: "PN"
+  country_name_en: "Pitcairn"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_169:
+  id: 169
+  country_code: "PL"
+  country_name_en: "Poland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_170:
+  id: 170
+  country_code: "PF"
+  country_name_en: "Polynesia (Fr.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_171:
+  id: 171
+  country_code: "PT"
+  country_name_en: "Portugal"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_172:
+  id: 172
+  country_code: "PR"
+  country_name_en: "Puerto Rico (US)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_173:
+  id: 173
+  country_code: "QA"
+  country_name_en: "Qatar"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_174:
+  id: 174
+  country_code: "RE"
+  country_name_en: "Reunion (Fr.)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_175:
+  id: 175
+  country_code: "RO"
+  country_name_en: "Romania"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_176:
+  id: 176
+  country_code: "RU"
+  country_name_en: "Russian Federation"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_177:
+  id: 177
+  country_code: "RW"
+  country_name_en: "Rwanda"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_178:
+  id: 178
+  country_code: "LC"
+  country_name_en: "Saint Lucia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_179:
+  id: 179
+  country_code: "WS"
+  country_name_en: "Samoa"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_180:
+  id: 180
+  country_code: "SM"
+  country_name_en: "San Marino"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_181:
+  id: 181
+  country_code: "SA"
+  country_name_en: "Saudi Arabia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_182:
+  id: 182
+  country_code: "SN"
+  country_name_en: "Senegal"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_183:
+  id: 183
+  country_code: "SC"
+  country_name_en: "Seychelles"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_184:
+  id: 184
+  country_code: "SL"
+  country_name_en: "Sierra Leone"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_185:
+  id: 185
+  country_code: "SG"
+  country_name_en: "Singapore"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_186:
+  id: 186
+  country_code: "SK"
+  country_name_en: "Slovak Republic"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_187:
+  id: 187
+  country_code: "SI"
+  country_name_en: "Slovenia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_188:
+  id: 188
+  country_code: "SB"
+  country_name_en: "Solomon Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_189:
+  id: 189
+  country_code: "SO"
+  country_name_en: "Somalia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_190:
+  id: 190
+  country_code: "ZA"
+  country_name_en: "South Africa"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_191:
+  id: 191
+  country_code: "SU"
+  country_name_en: "Soviet Union"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_192:
+  id: 192
+  country_code: "ES"
+  country_name_en: "Spain"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_193:
+  id: 193
+  country_code: "LK"
+  country_name_en: "Sri Lanka"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_194:
+  id: 194
+  country_code: "SH"
+  country_name_en: "St. Helena"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_195:
+  id: 195
+  country_code: "PM"
+  country_name_en: "St. Pierre & Miquelon"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_196:
+  id: 196
+  country_code: "ST"
+  country_name_en: "St. Tome and Principe"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_197:
+  id: 197
+  country_code: "KN"
+  country_name_en: "St.Kitts Nevis Anguilla"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_198:
+  id: 198
+  country_code: "VC"
+  country_name_en: "St.Vincent & Grenadines"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_199:
+  id: 199
+  country_code: "SD"
+  country_name_en: "Sudan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_200:
+  id: 200
+  country_code: "SR"
+  country_name_en: "Suriname"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_201:
+  id: 201
+  country_code: "SJ"
+  country_name_en: "Svalbard & Jan Mayen Is"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_202:
+  id: 202
+  country_code: "SZ"
+  country_name_en: "Swaziland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_203:
+  id: 203
+  country_code: "SE"
+  country_name_en: "Sweden"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_204:
+  id: 204
+  country_code: "CH"
+  country_name_en: "Switzerland"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_205:
+  id: 205
+  country_code: "SY"
+  country_name_en: "Syria"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_206:
+  id: 206
+  country_code: "TJ"
+  country_name_en: "Tadjikistan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_207:
+  id: 207
+  country_code: "TW"
+  country_name_en: "Taiwan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_208:
+  id: 208
+  country_code: "TZ"
+  country_name_en: "Tanzania"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_209:
+  id: 209
+  country_code: "TH"
+  country_name_en: "Thailand"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_210:
+  id: 210
+  country_code: "TG"
+  country_name_en: "Togo"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_211:
+  id: 211
+  country_code: "TK"
+  country_name_en: "Tokelau"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_212:
+  id: 212
+  country_code: "TO"
+  country_name_en: "Tonga"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_213:
+  id: 213
+  country_code: "TT"
+  country_name_en: "Trinidad & Tobago"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_214:
+  id: 214
+  country_code: "TN"
+  country_name_en: "Tunisia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_215:
+  id: 215
+  country_code: "TR"
+  country_name_en: "Turkey"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_216:
+  id: 216
+  country_code: "TM"
+  country_name_en: "Turkmenistan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_217:
+  id: 217
+  country_code: "TC"
+  country_name_en: "Turks & Caicos Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_218:
+  id: 218
+  country_code: "TV"
+  country_name_en: "Tuvalu"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_219:
+  id: 219
+  country_code: "UG"
+  country_name_en: "Uganda"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_220:
+  id: 220
+  country_code: "UA"
+  country_name_en: "Ukraine"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_221:
+  id: 221
+  country_code: "AE"
+  country_name_en: "United Arab Emirates"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_222:
+  id: 222
+  country_code: "UK"
+  country_name_en: "United Kingdom"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_223:
+  id: 223
+  country_code: "US"
+  country_name_en: "United States"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_224:
+  id: 224
+  country_code: "UY"
+  country_name_en: "Uruguay"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_225:
+  id: 225
+  country_code: "UM"
+  country_name_en: "US Minor outlying Isl."
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_226:
+  id: 226
+  country_code: "UZ"
+  country_name_en: "Uzbekistan"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_227:
+  id: 227
+  country_code: "VU"
+  country_name_en: "Vanuatu"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_228:
+  id: 228
+  country_code: "VA"
+  country_name_en: "Vatican City State"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_229:
+  id: 229
+  country_code: "VE"
+  country_name_en: "Venezuela"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_230:
+  id: 230
+  country_code: "VN"
+  country_name_en: "Vietnam"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_231:
+  id: 231
+  country_code: "VG"
+  country_name_en: "Virgin Islands (British)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_232:
+  id: 232
+  country_code: "VI"
+  country_name_en: "Virgin Islands (US)"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_233:
+  id: 233
+  country_code: "WF"
+  country_name_en: "Wallis & Futuna Islands"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_234:
+  id: 234
+  country_code: "EH"
+  country_name_en: "Western Sahara"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_235:
+  id: 235
+  country_code: "YE"
+  country_name_en: "Yemen"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_236:
+  id: 236
+  country_code: "YU"
+  country_name_en: "Yugoslavia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_237:
+  id: 237
+  country_code: "ZR"
+  country_name_en: "Zaire"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_238:
+  id: 238
+  country_code: "ZM"
+  country_name_en: "Zambia"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_239:
+  id: 239
+  country_code: "ZW"
+  country_name_en: "Zimbabwe"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_240:
+  id: 240
+  country_code: "WO"
+  country_name_en: "World"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
+country_241:
+  id: 241
+  country_code: "EA"
+  country_name_en: "East Africa"
+  created_at: <%= Time.today %>
+  updated_at: <%= Time.today %>
+
