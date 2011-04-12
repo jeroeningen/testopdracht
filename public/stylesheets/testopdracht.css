@@ -1,0 +1,93 @@
+body {
+  font-family: Lucida Grande, Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  background: #212121 url("/images/background.gif"); }
+
+div#wrapper {
+  width: 900px; }
+  div#wrapper div#header div#logo {
+    padding: 10px; }
+  div#wrapper div#header div#menu {
+    float: left;
+    width: 900px;
+    height: 40px;
+    background: #444444;
+    color: white; }
+    div#wrapper div#header div#menu ul {
+      padding: 0 1em; }
+      div#wrapper div#header div#menu ul li {
+        list-style: none;
+        float: left;
+        margin: 0 1em; }
+        div#wrapper div#header div#menu ul li a {
+          color: white; }
+        div#wrapper div#header div#menu ul li a.active {
+          color: red; }
+  div#wrapper div#content {
+    background: white;
+    min-height: 575px;
+    width: 880px;
+    padding: 10px;
+    float: left;
+    border-bottom: 20px solid black; }
+
+div#fancybox-content h1 {
+  text-align: center; }
+div#fancybox-content form, div#fancybox-content h1 {
+  max-width: 450px; }
+div#fancybox-content label {
+  width: 20%;
+  font-weight: bold; }
+div#fancybox-content input#user_submit {
+  float: none;
+  width: auto; }
+div#fancybox-content input {
+  margin: -5px 0 0;
+  float: right;
+  width: 75%; }
+div#fancybox-content table {
+  margin: 0 0 1em; }
+div#fancybox-content div#zipResult {
+  padding: 10px 0; }
+div#fancybox-content .field_with_errors {
+  display: table;
+  width: 100%; }
+  div#fancybox-content .field_with_errors label {
+    background-color: red;
+    width: 20%;
+    float: left;
+    margin: 0 0 -2em; }
+div#fancybox-content #errorExplanation {
+  width: 270px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+div#fancybox-content #errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff; }
+div#fancybox-content #errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px; }
+div#fancybox-content #errorExplanation ul li {
+  font-size: 12px;
+  list-style: square; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000; }
+
+a:hover {
+  color: #fff;
+  background-color: #000; }

@@ -1,0 +1,131 @@
+$default_background: #212121 url("/images/background.gif");
+$default_padding: 10px;
+$default_margin: 10px;
+$default_width: 900px;
+
+body { 
+	font-family: Lucida Grande, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	background: $default_background; 
+}
+
+div#wrapper {
+	width: $default_width;
+	div#header {
+		div#logo {
+			padding: $default_padding;
+		}
+		div#menu {
+			float:left;
+			width: $default_width;
+			height: 40px;
+			background: #444444;
+			color: white;
+			ul {
+				padding: 0 1em;
+				li {
+					list-style: none;
+					float: left;
+					margin: 0 1em;
+					a {
+						color: white;
+					}
+					a.active {
+						color: red;
+					}
+				}
+			}
+		}
+	}
+	div#content {
+		$padding_content: $default_padding;
+		background: white;
+		min-height: 575px;
+		width: $default_width - ($padding_content * 2);
+		padding: $padding_content;
+		float: left;
+		border-bottom: 20px solid black;
+	}
+}
+
+//fancybox
+div#fancybox-content {
+	$form_width: $default_width / 2;
+	$label_width: 20%;
+	h1 {
+		text-align: center;
+	}
+	form, h1 {
+		max-width: $form_width;
+	}
+	label {
+		width: $label_width;
+		font-weight: bold;
+	}
+	input#user_submit {
+		float: none;
+		width: auto;
+	}
+	input {
+		margin: -5px 0 0;
+		float: right;
+		width: 75%;
+	}
+	table {
+		margin: 0 0 1em;
+	}
+	
+	div#zipResult {
+		padding: $default_padding 0;
+	}
+	
+	.field_with_errors {
+	  display: table;
+	  width: 100%;
+	  label {
+		background-color: red;
+	  	width: $label_width;
+	  	float: left;
+	  	margin: 0 0 -2em;
+	  }
+	}
+	
+	#errorExplanation {
+	  width: 270px;
+	  border: 2px solid red;
+	  padding: 7px;
+	  padding-bottom: 12px;
+	  margin-bottom: 20px;
+	  background-color: #f0f0f0;
+	}
+	
+	#errorExplanation h2 {
+	  text-align: left;
+	  font-weight: bold;
+	  padding: 5px 5px 5px 15px;
+	  font-size: 12px;
+	  margin: -7px;
+	  background-color: #c00;
+	  color: #fff;
+	}
+	
+	#errorExplanation p {
+	  color: #333;
+	  margin-bottom: 0;
+	  padding: 5px;
+	}
+	
+	#errorExplanation ul li {
+	  font-size: 12px;
+	  list-style: square;
+	}
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:hover { color: #fff; background-color:#000; }

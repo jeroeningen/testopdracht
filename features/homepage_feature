@@ -1,0 +1,8 @@
+Feature: Display homepage
+	In order to view the homepages
+	As a visitor
+	I should go to the root path
+	
+	Scenario: Display homepage as visitor
+		When I am on the homepage
+		Then I should see "Welcome visitor"
