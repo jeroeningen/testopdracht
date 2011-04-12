@@ -1,0 +1,16 @@
+#TODO:
+
+CURRENT APPLICATION
+- review cucumber and rspec tests
+- add routing rspec
+- check layout and interaction design
+- in users/show implement geocoding
+- implement rcov
+- fix growl
+- create a multiple uploader using the fancybox (for imagebank)
+- create imagebank with categories and tags (as much as you can in fancybox)
+- create login module using the nifty authentication
+- create multiple step form (new branch)
+
+PLUGIN
+- create a fancybox and Geocoding plugin out of this application
