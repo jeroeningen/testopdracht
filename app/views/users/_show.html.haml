@@ -1,17 +1,38 @@
-  <h2><%=h @user.firstname + " " + @user.lastname%></h2>
-  <div class="title">Firstname:</div>
-  <div class="description"><%=h @user.firstname %></div>
-  <div class="title">Lastname:</div>
-  <div class="description"><%=h @user.lastname %></div>
-  <div class="title">Zipcode:</div>
-  <div class="description"><%=h @user.zipcode %></div>
-  <div class="title">Country:</div>
-  <div class="description"><%=h @user.country.country_name_en %></div>
-  <div class="title">Street:</div>
-  <div class="description"><%=h @user.street %></div>
-  <div class="title">City:</div>
-  <div class="description"><%=h @user.city %></div>
+%h2
+  = @user.name
+%table
+  %tr
+    %td
+      %label
+        Firstname:
+    %td
+      = @user.firstname
+  %tr
+    %td
+      %label
+        Lastname:
+    %td
+      = @user.lastname
+  %tr
+    %td
+      %label
+        Zipcode:
+    %td
+      = @user.zipcode
+  %tr
+    %td
+      %label
+        Street:
+    %td
+      = @user.street
+  %tr
+    %td
+      %label
+        City:
+    %td
+      = @user.city
 
 
-<%= link_to 'Edit', edit_user_path(@user), :onclick => "Modalbox.show('" + edit_user_path(@user) + "', {afterLoad: function() {"+ resolve_address + "}}); return false;" %> |
-<%= link_to 'Back', {}, :onclick => "Modalbox.hide(); return false;" %>
+= link_to_fancybox 'Edit this user', edit_user_path(@user)
+|
+= link_to_close_fancybox 'Back'

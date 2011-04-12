@@ -1,18 +1,12 @@
-#TODO: 
-upgrade naar rails3
+HOWTO INSTALL
+1. Get the project by using the command 'git clone https://github.com/jeroeningen/testopdracht.git'
+2. Create the database.yml in config/database.yml
+3. Setup the database using the commands 'rake db:create' and 'rake db:migrate'. If you need the test database, please also run 'rake db:test:clone'
+4. Install the necessary gems by using command 'bundle install'
+5. Start the server with command 'rails s'
+6. THAT'S IT.
 
-write cucumber test for application
-1. write cucumber test per controller
-- addresses
-- users
-- countries
-2. write rspec tests for the following controllers and models
-controllers:
-- addresses
-- users
-- countries
-models:
-- address
-- user
-- country
-3. upgrade to rails 3
+TESTS
+This application comes with Cucumber and Rspec tests (including autotest)
+To run the Cucumber tests, use the command 'cucumber'. 
+To run the Rspec tests, use the command 'autotest'. Note that Growl-notifications are disabled by default, see the file ~/.autotest. 

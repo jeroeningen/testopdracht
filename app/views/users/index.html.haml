@@ -1,30 +1,24 @@
-<h1>Listing users</h1>
+%h1
+  Listing users
 
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Zipcode</th>
-    <th>Country</th>
-    <th>Street</th>
-    <th>City</th>
-  </tr>
+%table
+  %tr
+    %th
+      Firstname
+    %th
+      Lastname
+  - @users.each do |user|
+    %tr
+      %td
+        = user.firstname
+      %td
+        = user.lastname
+      %td
+        = link_to_fancybox 'Show', user_path(user)
+      %td
+        = link_to_fancybox "Edit", edit_user_path(user)
+      %td
+        = link_to_fancybox 'Destroy', user_destroy_path(user)
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%=h user.firstname %></td>
-    <td><%=h user.lastname %></td>
-    <td><%=h user.zipcode %></td>
-    <td><%=h user.country.country_name_en %></td>
-    <td><%=h user.street %></td>
-    <td><%=h user.city %></td>
-    <td><%= link_to 'Show', {}, :onclick => "Modalbox.show('/users/#{user.id}'); return false;" %></td>
-    <td><%= link_to 'Edit', {}, :onclick => "Modalbox.show('" + edit_user_path(user) + "',{afterLoad: function() {"+ resolve_address + "}}); return false;" %></td>
-    <td><%= link_to 'Destroy', {}, :onclick => "Modalbox.show('users/destroy/#{user.id}'); return false;"  %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New user', {}, :onclick => "Modalbox.show('" + new_user_path + "'); return false;" %>
+%br
+= link_to_fancybox 'New user', new_user_path
