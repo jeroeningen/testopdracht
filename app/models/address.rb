@@ -1,8 +1,9 @@
 class Address
-  
+  GOOGLE_API_KEY = "ABQIAAAAFsjL_ySdbuJtGjezmrZK1xTJQa0g3IQ9GZqIMmInSLzwtGDKaBSiEsqQLyGI0BNbjNLcWmzxPaJyTQ"
+ 
   include ActiveModel::Validations
 
-  require 'geox'
+  require 'open-uri'
   require 'geonames'
  
   attr_accessor :zipcode
@@ -17,13 +18,16 @@ class Address
   def self.address(zipcode = nil)
     address = Address.new(zipcode)
     if address.valid?
-      geocoder = GeoX::Geocoder.new(:geoengine => GeoX::Google)
-      location = {:post_code => zipcode + ',Nederland'}
-      geocode = geocoder.geocode(location)[0]
+      url = "http://maps.google.com/maps/geo?&key=#{Address::GOOGLE_API_KEY}&q=#{address.zipcode}%2CNederland&output=xml"      
+      begin
+        longitude, latitude = Hpricot(open(url)).search('coordinates').inner_html.split(",")
+      rescue
+        return ""
+      end
       
       #sometimes the webservices fails so try five times to receive the address if address is not received yet
       5.times do
-        address = Geonames::WebService.find_nearby_place_name(geocode.latitude, geocode.longitude)[0]
+        address = Geonames::WebService.find_nearby_place_name(latitude, longitude)[0]
         break if address
       end
       
