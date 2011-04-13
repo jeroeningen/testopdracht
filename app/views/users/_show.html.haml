@@ -32,7 +32,13 @@
     %td
       = @user.city
 
+%label
+  You are living nearby:
+%div#zipResult  
 
+= javascript_tag do
+  = ajax_request_to_resolve_address(@user.zipcode)
+  
 = link_to_fancybox 'Edit this user', edit_user_path(@user)
 |
 = link_to_close_fancybox 'Back'

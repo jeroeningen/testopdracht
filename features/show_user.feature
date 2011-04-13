@@ -11,6 +11,7 @@ Feature: Show the first user
 		Then I should see the fancybox
 		And I should see "Jeroen Van Ingen"
 		And I should see "Beemsterstraat 176"
+		And Geocoding shows "Nieuwendam"
 		
 		#test if the fancybox disappears correctly
 		When I wait one second 
