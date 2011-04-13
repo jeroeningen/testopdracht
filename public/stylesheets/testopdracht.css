@@ -38,13 +38,16 @@ div#fancybox-content form, div#fancybox-content h1 {
 div#fancybox-content label {
   width: 20%;
   font-weight: bold; }
-div#fancybox-content input#user_submit {
+div#fancybox-content input[type=submit], div#fancybox-content input[type=button] {
   float: none;
   width: auto; }
 div#fancybox-content input {
   margin: -5px 0 0;
   float: right;
   width: 75%; }
+div#fancybox-content div#destroy_user_form input {
+  float: left;
+  margin: 10px 10px 0 0; }
 div#fancybox-content table {
   margin: 0 0 1em; }
 div#fancybox-content div#zipResult {

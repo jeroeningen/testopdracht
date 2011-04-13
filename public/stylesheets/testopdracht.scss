@@ -62,7 +62,7 @@ div#fancybox-content {
 		width: $label_width;
 		font-weight: bold;
 	}
-	input#user_submit {
+	input[type=submit], input[type=button] {
 		float: none;
 		width: auto;
 	}
@@ -70,6 +70,10 @@ div#fancybox-content {
 		margin: -5px 0 0;
 		float: right;
 		width: 75%;
+	}
+	div#destroy_user_form input {
+		float: left;
+		margin: $default_margin $default_margin 0 0
 	}
 	table {
 		margin: 0 0 1em;
