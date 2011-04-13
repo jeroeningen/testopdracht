@@ -2,9 +2,9 @@
 
 CURRENT APPLICATION
 - review cucumber and rspec tests
-- add routing rspec
 - check layout and interaction design
-- in users/show implement geocoding
+- create menu.feature
+- rspec test for application controller
 - implement rcov
 - fix growl
 - create a multiple uploader using the fancybox (for imagebank)
@@ -14,3 +14,9 @@ CURRENT APPLICATION
 
 PLUGIN
 - create a fancybox and Geocoding plugin out of this application
+
+OTHER
+- deploy with capistrano
+- add FAQ to README
+	- Why is Cucumber broken?
+- create install script
