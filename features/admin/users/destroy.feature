@@ -4,7 +4,7 @@ Feature: Destroy a user
 	I should click the destroy link and confirm the destroy
 	
 	Scenario: Destroy a user
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "Destroy"
 		Then I should see the fancybox
 		
@@ -14,7 +14,7 @@ Feature: Destroy a user
 		And I should not see "Jeroen"
 		
 	Scenario: Cancel the destroy
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "Destroy"
 		Then I should see the fancybox
 		

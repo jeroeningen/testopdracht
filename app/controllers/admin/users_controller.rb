@@ -1,4 +1,4 @@
-class UsersController < InheritedResources::Base
+class Admin::UsersController < InheritedResources::Base
   
   include UsersHelper
   include FancyboxHelper

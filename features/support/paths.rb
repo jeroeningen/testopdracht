@@ -10,8 +10,10 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the admin home\s?page/
+      '/admin'
     when /([^"]*)_path/
-      "/#{page_name.gsub("_path", "")}"
+      "/#{page_name.gsub(/_root_path|_path/, "").gsub("_", "/")}"
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

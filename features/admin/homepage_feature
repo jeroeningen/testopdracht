@@ -1,0 +1,10 @@
+Feature: Display admin homepage
+	In order to view the admin homepage
+	As a visitor
+	I should go to the admin root path
+	
+	Scenario: Display homepage as visitor
+		When I am on the admin homepage
+		Then I should see "Welcome admin"
+		When I follow "Home"
+		Then I should be on the admin homepage

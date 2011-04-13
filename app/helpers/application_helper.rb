@@ -1,5 +1,10 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  #check if in admin routing
+  def admin_routing?
+    controller.request.path.starts_with? "/admin"
+  end
+  
   #checks if you're in the edit or update action
   def edit_or_update?
     ["edit", "update"].include?(controller.action_name)

@@ -1,0 +1,30 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Zipcode</th>
+    <th>Country</th>
+    <th>Street</th>
+    <th>City</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.firstname %></td>
+    <td><%=h user.lastname %></td>
+    <td><%=h user.zipcode %></td>
+    <td><%=h user.country.country_name_en %></td>
+    <td><%=h user.street %></td>
+    <td><%=h user.city %></td>
+    <td><%= link_to 'Show', {}, :onclick => "Modalbox.show('/users/#{user.id}'); return false;" %></td>
+    <td><%= link_to 'Edit', {}, :onclick => "Modalbox.show('" + edit_user_path(user) + "',{afterLoad: function() {"+ ajax_request_to_resolve_address + "}}); return false;" %></td>
+    <td><%= link_to 'Destroy', {}, :onclick => "Modalbox.show('users/destroy/#{user.id}'); return false;"  %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user', {}, :onclick => "Modalbox.show('" + new_user_path + "'); return false;" %>

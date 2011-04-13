@@ -1,0 +1,24 @@
+%h1
+  Listing users
+
+%table
+  %tr
+    %th
+      Firstname
+    %th
+      Lastname
+  - @users.each do |user|
+    %tr
+      %td
+        = user.firstname
+      %td
+        = user.lastname
+      %td
+        = link_to_fancybox 'Show', admin_user_path(user)
+      %td
+        = link_to_fancybox "Edit", edit_admin_user_path(user)
+      %td
+        = link_to_fancybox 'Destroy', admin_user_destroy_path(user)
+
+%br
+= link_to_fancybox 'New user', new_admin_user_path

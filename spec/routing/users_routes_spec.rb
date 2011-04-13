@@ -1,49 +1,55 @@
 require "spec_helper"
 
-describe "routes to users_controller" do
+describe "routes to admin/users_controller" do
   before(:each) do
     @id = @jeroen.id.to_s
   end
   
   describe "GET users" do
-    it "should route to users" do
-      {:get => users_path}.should route_to(:controller => "users", :action => "index")
+    it "should route to admin/users" do
+      {:get => admin_users_path}.should route_to(:controller => "admin/users", :action => "index")
     end
   end
   
-  describe "GET users/new" do
-    it "should route to users/new" do
-      {:get => new_user_path}.should route_to(:controller => "users", :action => "new") 
+  describe "GET admin/users/new" do
+    it "should route to admin/users/new" do
+      {:get => new_admin_user_path}.should route_to(:controller => "admin/users", :action => "new") 
     end
   end
   
-  describe "GET users/show/1" do
-    it "should route to users/show" do
-      {:get => user_path(@jeroen)}.should route_to(:controller => "users", :action => "show", :id => @id)
+  describe "POST /admin/users" do
+    it "should route to POST admin/users" do
+      {:post => admin_users_path}.should route_to(:controller => "admin/users", :action => "create")
     end
   end
   
-  describe "GET users/edit/1" do
-    it "should route to users/edit/1" do
-      {:get => edit_user_path(@jeroen)}.should route_to(:controller => "users", :action => "edit", :id => @id)
+  describe "GET admin/users/show/1" do
+    it "should route to admin/users/show" do
+      {:get => admin_user_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "show", :id => @id)
     end
   end
   
-  describe "PUT users/1" do
-    it "should route to update users/1" do
-      {:put => user_path(@jeroen)}.should route_to(:controller => "users", :action => "update", :id => @id)
+  describe "GET admin/users/edit/1" do
+    it "should route to admin/users/edit/1" do
+      {:get => edit_admin_user_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "edit", :id => @id)
     end
   end
   
-  describe "DELETE users/1" do
-    it "should route to DELETE users/1" do
-      {:delete => user_path(@jeroen)}.should route_to(:controller => "users", :action => "destroy", :id => @id)
+  describe "PUT admin/users/1" do
+    it "should route to update admin/users/1" do
+      {:put => admin_user_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "update", :id => @id)
     end
   end
   
-  describe "GET user_destroy" do
-    it "should route to GET user_destroy" do
-      {:get => user_destroy_path(@jeroen)}.should route_to(:controller => "users", :action => "destroy", :id => @id)
+  describe "DELETE admin/users/1" do
+    it "should route to DELETE admin/users/1" do
+      {:delete => admin_user_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "destroy", :id => @id)
+    end
+  end
+  
+  describe "GET admin/user_destroy" do
+    it "should route to GET admin/user_destroy" do
+      {:get => admin_user_destroy_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "destroy", :id => @id)
     end
   end
 end

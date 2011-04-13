@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "users/_edit" do
+describe "admin/users/_edit" do
   it "should display the possibility to edit user Jeroen" do
     #because of a bug in Rspec, manually set the right controller action
     controller.action_name = "update"

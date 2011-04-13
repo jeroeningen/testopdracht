@@ -4,7 +4,7 @@ Feature: Show the first user
 	I have to see all users and click on the show of the first user
 	
 	Scenario: Show me the first user
-		Given I am on users_path
+		Given I am on admin_users_path
 		And I should see "Listing users"
 		And I should not see the fancybox 
 		When I follow "Show"

@@ -4,7 +4,7 @@ Feature: Create a new user
 	I have to fill in the form for a new user and save it
 	
 	Scenario: Create a new user
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "New user"
 		Then I should see the fancybox
 		And I fill in "user_firstname" with "Frank"
@@ -20,7 +20,7 @@ Feature: Create a new user
 		And I should see "Frank"	
 		
 	Scenario: Cancel creating a user
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "New user"
 		Then I should see the fancybox
 		And I should see "New user"

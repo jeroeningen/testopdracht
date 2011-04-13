@@ -1,8 +1,10 @@
 Feature: Display homepage
-	In order to view the homepages
+	In order to view the homepage
 	As a visitor
 	I should go to the root path
 	
 	Scenario: Display homepage as visitor
 		When I am on the homepage
 		Then I should see "Welcome visitor"
+		When I follow "Home"
+		Then I should be on the homepage

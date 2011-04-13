@@ -4,7 +4,7 @@ Feature: Edit a user
 	I have to choose the user, edit the details and save the user
 	
 	Scenario: Edit a user
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "Edit"
 		Then I should see the fancybox
 		And I should see "Editing 'Jeroen Van Ingen'"
@@ -23,7 +23,7 @@ Feature: Edit a user
 		And I should see "Willem"
 		
 	Scenario: Edit a user in a slightly different way
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "Show"
 		Then I should see the fancybox
 		And I wait one second
@@ -43,7 +43,7 @@ Feature: Edit a user
 		And I should see "Willem"
 		
 	Scenario: Cancel editing a user
-		Given I am on users_path
+		Given I am on admin_users_path
 		When I follow "Edit"
 		Then I should see the fancybox
 		And I should see "Editing 'Jeroen Van Ingen'"

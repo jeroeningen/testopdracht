@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe UsersController do
+describe Admin::UsersController do
   render_views
   
-  describe "GET index" do
+  describe "GET admin/users/index" do
     it "should render the index template" do
       get :index
       should respond_with(:success)
@@ -13,7 +13,7 @@ describe UsersController do
     end
   end
   
-  describe "GET show" do 
+  describe "GET admin/users/show" do 
     it "should render the show template" do
       get :show, :id => 1
       should respond_with(:success)
@@ -23,7 +23,7 @@ describe UsersController do
     end
   end
   
-  describe "GET new" do
+  describe "GET admin/users/new" do
     it "should render the new template" do
       get :new
       should respond_with(:success)
@@ -33,7 +33,7 @@ describe UsersController do
     end
   end
   
-  describe "GET edit" do
+  describe "GET admin/users/edit" do
     it "should render the edit template" do
       get :edit, :id => 1
       should respond_with(:success)

@@ -1,6 +1,13 @@
 require 'spec_helper'
 
 describe ApplicationHelper do
+  describe "#admin_routing?" do
+    it "should check if user is in admin routing" do
+      controller.request.path = "/admin"
+      helper.admin_routing?.should be_true
+    end
+  end
+  
   describe "#edit_or_update?" do
     it "should validate if user is in the edit or update action" do
       controller.action_name = "update"
