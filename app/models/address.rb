@@ -15,7 +15,7 @@ class Address
   end
 
   #use Google to find the matching address that belongs to the zipcode
-  def self.address(zipcode = nil)
+  def self.find_area_by_zipcode(zipcode = nil)
     address = Address.new(zipcode)
     if address.valid?
       url = "http://maps.google.com/maps/geo?&key=#{Address::GOOGLE_API_KEY}&q=#{address.zipcode}%2CNederland&output=xml"      
