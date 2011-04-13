@@ -25,4 +25,7 @@ Q. Help, my Cucumber installation seems to be broken!
 A. Please remove the Cucumber gem with the command 'sudo gem uninstall cucumber-rails' and then run the command 'bundle install'.
 
 Q. The commands 'autotest' and/or 'cucumber' are not working.
-A. Please use the command 'bundle exec autotest' and 'bundle exec cucumber' instead. 
+A. Please use the command 'bundle exec autotest' and 'bundle exec cucumber' instead.
+
+Q. LOSER! Your Cucumber tests are broken! It won't return the area where I'm living, when I enter my zipcode.
+A. This is probably a performance issue; the Cucumber tests are unfortunately quite heavy. Please make sure the Rspec-tests are running well and rerun the Cucumber test while your computer is in idle.
