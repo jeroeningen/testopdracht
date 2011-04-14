@@ -11,7 +11,7 @@ module FancyboxHelper
   #reload the form in the fancybox
   def reload_form_in_fancybox
     render :update do |page|
-      page << "$('div#fancybox-content').html('#{escape_javascript render(:partial => edit_or_update? ? "edit.html" : "new.html")}');$.fancybox.resize();"
+      page << "$('div#fancybox-content').html('#{escape_javascript render(:partial => "#{controller.controller_path}/" + (edit_or_update? ? "edit.html" : "new.html"))}');$.fancybox.resize();"
     end
   end
   

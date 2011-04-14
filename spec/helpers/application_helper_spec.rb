@@ -23,14 +23,16 @@ describe ApplicationHelper do
   
   describe "#current_controller" do
     it "should return the current controller" do
-      helper.current_controller.should == "test"
+      controller.stub(:controller_name) {"users"}
+      helper.current_controller.should == "users"
     end
   end
   
   describe "#current_controller?" do
     it "should return true if the given controller is part of the current controller" do
+      controller.stub(:controller_name) {"users"}
       helper.current_controller?("/").should be_false
-      helper.current_controller?("test").should be_true
+      helper.current_controller?("users").should be_true
       helper.current_controller?("users/1").should be_false
       helper.current_controller?("testers").should be_false
     end
@@ -38,9 +40,10 @@ describe ApplicationHelper do
   
   describe "#active_link?" do
     it "should check if the given link is active" do
+      controller.stub(:controller_name) {"users"}
       helper.active_link?("/").should be_empty
-      helper.active_link?("test").should_not be_empty
-      helper.active_link?("users").should be_empty
+      helper.active_link?("test").should be_empty
+      helper.active_link?("users").should_not be_empty
       helper.active_link?("user").should be_empty
     end
   end
