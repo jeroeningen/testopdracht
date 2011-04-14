@@ -1,0 +1,4 @@
+MetricFu::Configuration.run do |config|
+  #set the right output directory
+  config.output_directory = 'coverage'
+end
