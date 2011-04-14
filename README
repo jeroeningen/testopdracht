@@ -29,3 +29,6 @@ A. Please use the command 'bundle exec autotest' and 'bundle exec cucumber' inst
 
 Q. LOSER! Your Cucumber tests are broken! It won't return the area where I'm living, when I enter my zipcode.
 A. This is probably a performance issue; the Cucumber tests are unfortunately quite heavy. Please make sure the Rspec-tests are running well and rerun the Cucumber test while your computer is in idle.
+
+Q. You bundled the gem 'rcov'. How can I use it?
+A. Please run 'rake rcov:rspec' for RSpec and 'rake rcov:cucumber' for Cucumber. Results are written to the directory ~/coverage.

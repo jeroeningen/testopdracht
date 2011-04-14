@@ -21,6 +21,7 @@ group :test do
 	gem 'shoulda-matchers'
 	gem 'autotest'
 	gem 'autotest-growl'
+	gem 'rcov'
 end
 
 # Use unicorn as the web server

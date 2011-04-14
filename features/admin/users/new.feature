@@ -19,6 +19,21 @@ Feature: Create a new user
 		Then I should not see the fancybox
 		And I should see "Frank"	
 		
+	Scenario: Creation of user fails
+		Given I am on admin_users_path
+		When I follow "New user"
+		Then I should see the fancybox
+		And I fill in "user_street" with "Beemsterstraat 180"
+		And I fill in "user_zipcode" with "1024BJ"
+		And I fill in "user_city" with "Amsterdam" 
+		And Geocoding shows "Nieuwendam"
+		
+		#actually creates the user and it fails
+		When I press "Create"
+		Then I should see the fancybox
+		And I should see "2 errors prohibited"
+		And I should not see "Frank"	
+		
 	Scenario: Cancel creating a user
 		Given I am on admin_users_path
 		When I follow "New user"

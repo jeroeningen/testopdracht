@@ -19,11 +19,7 @@ class Address
     address = Address.new(zipcode)
     if address.valid?
       url = "http://maps.google.com/maps/geo?&key=#{Address::GOOGLE_API_KEY}&q=#{address.zipcode}%2CNederland&output=xml"      
-      begin
-        longitude, latitude = Hpricot(open(url)).search('coordinates').inner_html.split(",")
-      rescue
-        return ""
-      end
+      longitude, latitude = Hpricot(open(url)).search('coordinates').inner_html.split(",")
       
       #sometimes the webservices fails so try five times to receive the address if address is not received yet
       5.times do
