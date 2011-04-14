@@ -1,3 +1,4 @@
+#addresses controller
 class AddressesController < ApplicationController
   #return the address of the given zipcode
   def show

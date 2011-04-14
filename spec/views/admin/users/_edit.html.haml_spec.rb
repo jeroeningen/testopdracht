@@ -6,7 +6,7 @@ describe "admin/users/_edit" do
     controller.action_name = "update"
     prepare_userviews
     rendered.should =~ /Editing\n'Jeroen Van Ingen'/
-    should_contain_the_user_labels
+    should_contain_the_user_labels true
     rendered.should =~ /Update/
   end
 end

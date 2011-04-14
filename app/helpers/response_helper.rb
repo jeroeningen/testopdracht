@@ -11,12 +11,14 @@ module ResponseHelper
   end
 
   #check if all the labels are rendered
-  def should_contain_the_user_labels
-    rendered.should =~ /Firstname/
-    rendered.should =~ /Lastname/
-    rendered.should =~ /Street/
-    rendered.should =~ /Zipcode/
-    rendered.should =~ /City/
+  def should_contain_the_user_labels(form = false)
+    ["firstname", "lastname", "street", "zipcode", "city"].each do |value|
+      if form
+        rendered.should =~ /<label for="user_#{value}">#{value.capitalize}<\/label>/
+      else
+        rendered.should =~ /<label>\n#{value.capitalize}:\n<\/label>/
+      end
+    end
   end
 
   #prepare the user views

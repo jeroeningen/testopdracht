@@ -1,3 +1,4 @@
+#users controller
 class Admin::UsersController < InheritedResources::Base
 
   include UsersHelper
