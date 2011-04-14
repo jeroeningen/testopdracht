@@ -11,7 +11,6 @@ class DropCountries < ActiveRecord::Migration
 
       t.timestamps
     end
-    
     add_column :users, :country_id, :integer
   end
 end

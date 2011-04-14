@@ -22,6 +22,7 @@ group :test do
 	gem 'autotest'
 	gem 'autotest-growl'
 	gem 'rcov'
+	gem 'metrical'
 end
 
 # Use unicorn as the web server

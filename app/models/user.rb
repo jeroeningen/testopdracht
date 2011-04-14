@@ -4,9 +4,9 @@ class User < ActiveRecord::Base
   validates :street, :presence => true
   validates :city, :presence => true
   validates :zipcode, :zipcode_format => true
-  
+
   alias_attribute :fullname, :name
-  
+
   def name
     "#{firstname} #{lastname}".strip
   end
