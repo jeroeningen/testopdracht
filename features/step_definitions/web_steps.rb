@@ -43,6 +43,18 @@ end
 
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
+  
+  #check if the menuitem is highlighted
+  menuitem = ""
+  case page_name
+    when /the home\s?page/
+      menuitem = 'Home'
+    when /the admin home\s?page/
+      menuitem = 'Home'
+    when /([^"]*)_path/
+      menuitem = page_name.gsub(/.*admin_|_path/, "")
+  end
+  page.find(:xpath, '//a[@class="active"]').text.should == menuitem.capitalize
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|

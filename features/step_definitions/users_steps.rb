@@ -36,3 +36,8 @@ Then /^Geocoding shows "([^"]*)"$/ do |location|
     assert page.has_content?(location)
   end
 end
+
+#Check whether the menu item is highlighted
+Given /^the menuitem "([^"]*)" is highlighted$/ do |menuitem|
+  page.find(:xpath, '//a[@class="active"]').text.should == menuitem.capitalize
+end
