@@ -10,14 +10,22 @@ module ResponseHelper
     response.body.should =~ /errors prohibited/
   end
 
-  #check if all the labels are rendered
-  def should_contain_the_user_labels(form = false)
-    ["firstname", "lastname", "street", "zipcode", "city"].each do |value|
-      if form
-        rendered.should =~ /<label for="user_#{value}">#{value.capitalize}<\/label>/
-      else
-        rendered.should =~ /<label>\n#{value.capitalize}:\n<\/label>/
-      end
+  #return attributes with validations
+  def validated_attributes_for(model)
+    eval(model.to_s.capitalize).create.errors.keys
+  end
+
+  #check if all the user labels are rendered
+  def should_contain_the_user_labels
+    validated_attributes_for(:user).each do |value|
+      rendered.should =~ /<label>\n#{value.to_s.capitalize}:\n<\/label>/
+    end
+  end
+
+  #check if all the userform labels are rendered
+  def should_contain_the_userform_labels
+    validated_attributes_for(:user).each do |value|
+      rendered.should =~ /<label for="user_#{value}">#{value.to_s.capitalize}<\/label>/
     end
   end
 
