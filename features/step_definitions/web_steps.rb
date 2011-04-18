@@ -43,8 +43,17 @@ end
 
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
-  
-  #check if the menuitem is highlighted
+
+  #check if the menu exists
+  menuitems = "Home Users"
+  if page.respond_to? :should
+    page.find(:xpath, '//div[@id="menu"]').should have_content(menuitems)
+  else
+     page.find(:xpath, '//div[@id="menu"]').text.should == menuitems
+  end
+
+
+  #check if the right menuitem is highlighted
   menuitem = ""
   case page_name
     when /the home\s?page/

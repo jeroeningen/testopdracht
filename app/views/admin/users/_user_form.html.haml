@@ -1,4 +1,4 @@
-= form_for([:admin, @user], :html => { :id => 'userform'}, :remote => true) do |f|
+= form_for([:admin, @user], {:html => { :id => 'userform'}}.merge(enable_lightbox? ? {:remote => true} : {})) do |f|
   = f.error_messages
   %p
     = f.label :firstname
@@ -20,7 +20,7 @@
   %div#zipResult
 
   %p
-    = link_to_close_fancybox 'Back'
+    = link_to_go_back
     = f.submit edit_or_update? ? 'Update' : "Create"
 = javascript_tag do
   = ajax_request_to_resolve_address 

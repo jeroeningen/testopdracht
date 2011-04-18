@@ -2,11 +2,52 @@ $default_background: #212121 url("/images/background.gif");
 $default_padding: 10px;
 $default_margin: 10px;
 $default_width: 900px;
+$default_label_width: 20%;
 
 body { 
 	font-family: Lucida Grande, Arial, Helvetica, sans-serif;
 	font-size: 0.8em;
 	background: $default_background; 
+}
+
+#errorExplanation {
+  width: 270px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.field_with_errors {
+	width: 100%;
+	display: table;
+	label {
+	  	float: left;
+	  	width: $default_label_width;
+		background-color: red;
+	}
 }
 
 div#wrapper {
@@ -15,14 +56,13 @@ div#wrapper {
 		div#logo {
 			padding: $default_padding;
 		}
-		div#menu {
-			float:left;
+		div#menu_and_options {
 			width: $default_width;
-			height: 40px;
+			height: 60px;
 			background: #444444;
 			color: white;
-			ul {
-				padding: 0 1em;
+			div#menu ul {
+				padding: $default_padding;
 				li {
 					list-style: none;
 					float: left;
@@ -35,23 +75,64 @@ div#wrapper {
 					}
 				}
 			}
+			div#enable_lightbox {
+				padding: 0 (2 * $default_padding);
+				form.disabled {
+					opacity: 0.3;
+				}
+				input {
+					padding: 0 0 2px;
+				}
+			}
 		}
 	}
 	div#content {
 		$padding_content: $default_padding;
 		background: white;
 		min-height: 575px;
-		width: $default_width - ($padding_content * 2);
-		padding: $padding_content;
+		width: $default_width - ($padding_content * 6);
+		padding: $padding_content * 2 $padding_content * 2 $padding_content * 2 $padding_content * 4;
 		float: left;
 		border-bottom: 20px solid black;
+		$bottom_margin: 2em;
+		h2.big {
+			font-size: 2em;
+		}
+		form {
+			width: $default_width / 2;
+			div.field_with_errors input {
+				float: right;
+				margin: -$default_margin * 2 0 0 0;
+			}
+		}
+		label {
+			font-weight: bold;
+			display: block;
+		}
+		p {
+			label {
+				width: $default_label_width;
+			}
+			input[type="text"] {
+				float: right;
+				margin: -21px 0 0;
+			}
+		}
+		table {
+			margin: 0 0 $bottom_margin;
+			td {
+				padding: $default_padding / 2;
+			}
+		}
+		div#zipResult{
+			padding: $default_padding 0;
+		}
 	}
 }
 
 //fancybox
 div#fancybox-content {
 	$form_width: $default_width / 2;
-	$label_width: 20%;
 	h1 {
 		text-align: center;
 	}
@@ -59,8 +140,7 @@ div#fancybox-content {
 		max-width: $form_width;
 	}
 	label {
-		width: $label_width;
-		font-weight: bold;
+		width: $default_label_width;
 	}
 	input[type=submit], input[type=button] {
 		float: none;
@@ -83,45 +163,8 @@ div#fancybox-content {
 		padding: $default_padding 0;
 	}
 	
-	.field_with_errors {
-	  display: table;
-	  width: 100%;
-	  label {
-		background-color: red;
-	  	width: $label_width;
-	  	float: left;
+	label {
 	  	margin: 0 0 -2em;
-	  }
-	}
-	
-	#errorExplanation {
-	  width: 270px;
-	  border: 2px solid red;
-	  padding: 7px;
-	  padding-bottom: 12px;
-	  margin-bottom: 20px;
-	  background-color: #f0f0f0;
-	}
-	
-	#errorExplanation h2 {
-	  text-align: left;
-	  font-weight: bold;
-	  padding: 5px 5px 5px 15px;
-	  font-size: 12px;
-	  margin: -7px;
-	  background-color: #c00;
-	  color: #fff;
-	}
-	
-	#errorExplanation p {
-	  color: #333;
-	  margin-bottom: 0;
-	  padding: 5px;
-	}
-	
-	#errorExplanation ul li {
-	  font-size: 12px;
-	  list-style: square;
 	}
 }
 

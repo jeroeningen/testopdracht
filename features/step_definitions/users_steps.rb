@@ -5,7 +5,7 @@ end
 
 #the fancybox window is shown
 #note that you need to wait one second before the fancybox is shown 
-Then /^I should see the fancybox$/ do
+Then /^I should see the lightbox$/ do
   sleep(1)
   text = "Fancybox modified by Jeroen van Ingen"
   if page.respond_to? :should
@@ -17,7 +17,7 @@ end
 
 #the fancybox window is not shown
 #note that you need to wait one second before the fancybox is hidden
-Given /^I should not see the fancybox$/ do
+Given /^I should not see the lightbox$/ do
   sleep(1)
   text = "Fancybox modified by Jeroen van Ingen"
   if page.respond_to? :should
@@ -40,4 +40,25 @@ end
 #Check whether the menu item is highlighted
 Given /^the menuitem "([^"]*)" is highlighted$/ do |menuitem|
   page.find(:xpath, '//a[@class="active"]').text.should == menuitem.capitalize
+end
+
+#confirm a destroy using the javascript confirmbox
+When /^I confrm the destroy using the confirm dialog$/ do
+  page.evaluate_script("window.confirm = function() { return true; }")
+  click_link("Destroy")
+end
+
+#cancel the desttroy using the javascript confirmbox
+When /^I cancel the destroy using the confirm dialog$/ do
+  page.evaluate_script("window.confirm = function() { return false; }")
+  click_link("Destroy")
+end
+
+Then /^I should see the menu$/ do
+  menuitems = "Home Users"
+  if page.respond_to? :should
+    page.find(:xpath, '//div[@id="menu"]').should have_content(menuitems)
+  else
+     page.find(:xpath, '//div[@id="menu"]').text.should == menuitems
+  end
 end

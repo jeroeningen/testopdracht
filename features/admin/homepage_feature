@@ -6,5 +6,6 @@ Feature: Display admin homepage
 	Scenario: Display homepage as visitor
 		When I am on the admin homepage
 		Then I should see "Welcome admin"
+		And I should see "Enable lightbox"
 		When I follow "Home"
 		Then I should be on the admin homepage

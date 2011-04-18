@@ -10,41 +10,42 @@ class Admin::UsersController < InheritedResources::Base
 
   def new
     @user = User.new
-    render :partial => "new"
+    render_action_or_partial
   end
 
   def show
-    render :partial => "show"
+    render_action_or_partial
   end
 
   def edit
-    render :partial => "edit"
+    render_action_or_partial
   end
 
   def create
     @user = User.new(params[:user])
 
     if @user.save
-      close_fancybox_and_reload_page
+      redirect_or_close_fancybox_and_reload_page
     else
-      reload_form_in_fancybox
+      render_action_or_reload_form_in_fancybox
     end
   end
 
   def update
     if @user.update_attributes(params[:user])
-      close_fancybox_and_reload_page
+      redirect_or_close_fancybox_and_reload_page
     else
-      reload_form_in_fancybox
+      render_action_or_reload_form_in_fancybox
     end
   end
 
   def destroy
-    if request.delete?
-      @user.destroy
-      close_fancybox_and_reload_page
-    else
+    #because of a bug, manually enable the lightbox
+    if params[:enable_lightbox] == "1"
       render :partial => "destroy"
+    else
+      @user.destroy
+      close_lightbox? ? close_fancybox_and_reload_page : redirect_to(admin_users_path)
     end
   end
 

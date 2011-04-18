@@ -63,7 +63,8 @@
 
 		_start = function() {
 			var obj = selectedArray[ selectedIndex ],
-				href, 
+				href,
+				http_method, 
 				type, 
 				title,
 				str,
@@ -94,6 +95,7 @@
 			}
 
 			href = selectedOpts.href || (obj.nodeName ? $(obj).attr('href') : obj.href) || null;
+			http_method = selectedOpts.http_method || (obj.nodeName ? $(obj).attr('http_method') : obj.http_method) || "GET";
 
 			if ((/^(?:javascript)/i).test(href) || href == '#') {
 				href = null;
@@ -139,6 +141,7 @@
 
 			selectedOpts.type = type;
 			selectedOpts.href = href;
+			selectedOpts.http_method = http_method;
 			selectedOpts.title = title;
 
 			if (selectedOpts.autoDimensions) {
@@ -242,6 +245,7 @@
 
 					ajaxLoader = $.ajax($.extend({}, selectedOpts.ajax, {
 						url	: href,
+						type : http_method,
 						data : selectedOpts.ajax.data || {},
 						error : function(XMLHttpRequest, textStatus, errorThrown) {
 							if ( XMLHttpRequest.status > 0 ) {

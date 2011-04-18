@@ -29,7 +29,7 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   
   #load helper methods
-  config.include(ResponseHelper)
+  config.include(RspecCustomHelper)
 
   #Clean the databsae and use the factoies
   config.before(:each) do
