@@ -7,11 +7,11 @@
     = f.label :lastname
     = f.text_field :lastname
   %p
-    = f.label :zipcode
-    = f.text_field(:zipcode, {:onblur => ajax_request_to_resolve_address})
-  %p
     = f.label :street
     = f.text_field :street
+  %p
+    = f.label :zipcode
+    = f.text_field(:zipcode, {:onblur => ajax_request_to_resolve_address})
   %p
     = f.label :city
     = f.text_field :city
