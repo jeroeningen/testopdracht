@@ -44,7 +44,7 @@ describe Admin::UsersController do
   end
   
   describe "POST with user attributes" do
-    it "should close the fancybox and reload the page" do
+    it "should close the lightbox and reload the page" do
       post :create, :user => @frank.attributes
       should respond_with(:success)
       should assign_to(:user)
@@ -63,7 +63,7 @@ describe Admin::UsersController do
   end
   
   describe "UPDATE with user attributes" do
-    it "should close the fancybox and reload the page" do
+    it "should close the lightbox and reload the page" do
       put :update, :id => @jeroen.id, :user => @jeroen.attributes
       should respond_with(:success)
       should assign_to(:user)
@@ -82,21 +82,10 @@ describe Admin::UsersController do
  end
   
   describe "DELETE user with id" do
-    it "should close the fancybox and reload the page" do
+    it "should close the lightbox and reload the page" do
       delete :destroy, :id => @jeroen.id
-      should respond_with(:success)
       should assign_to(:user)
-      response_should_close_fancybox_and_reload_page
-    end
-  end
-  
-  describe "GET destroy with id" do
-    it "should return the destroy template" do
-      get :destroy, :id => @jeroen.id
-      should assign_to(:user)
-      should respond_with(:success)
-      should render_template(:destroy)
-      response.body.should =~ /Are you sure you want to delete this user?/
+      should respond_with(:redirect)
     end
   end
 end

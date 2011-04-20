@@ -6,15 +6,15 @@ Feature: Show the first user
 	Scenario: Show me the first user
 		Given I am on admin_users_path
 		And I should see "Listing users"
-		And I should not see the fancybox 
+		And I should not see the lightbox 
 		When I follow "Show"
-		Then I should see the fancybox
+		Then I should see the lightbox
 		And I should see "Jeroen Van Ingen"
 		And I should see "Beemsterstraat 176"
 		And Geocoding shows "Nieuwendam"
 		
-		#test if the fancybox disappears correctly
+		#test if the lightbox disappears correctly
 		When I wait one second 
 		And I follow "Back"
-		Then I should not see the fancybox
+		Then I should not see the lightbox
 		

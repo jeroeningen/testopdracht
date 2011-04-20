@@ -46,10 +46,4 @@ describe "routes to admin/users_controller" do
       {:delete => admin_user_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "destroy", :id => @id)
     end
   end
-  
-  describe "GET admin/user_destroy" do
-    it "should route to GET admin/user_destroy" do
-      {:get => admin_user_destroy_path(@jeroen)}.should route_to(:controller => "admin/users", :action => "destroy", :id => @id)
-    end
-  end
 end

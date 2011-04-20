@@ -40,12 +40,8 @@ class Admin::UsersController < InheritedResources::Base
   end
 
   def destroy
-    if request.delete?
-      @user.destroy
-      close_fancybox_and_reload_page
-    else
-      render :partial => "destroy"
-    end
+    @user.destroy
+    redirect_to admin_users_path
   end
 
   private
