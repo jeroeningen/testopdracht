@@ -1,7 +1,7 @@
 %ul
   %li
     = link_to("Home", admin_routing? ? admin_root_path : root_path, active_link?("pages"))
-    - links = admin_routing? ? ["user"] : []
+    - links = admin_routing? ? ["user", "fueltype"] : []
     - links.each do |value|
       %li
         - path = "#{"admin_" if admin_routing?}#{value.pluralize}_path"

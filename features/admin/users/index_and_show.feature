@@ -1,6 +1,6 @@
 Feature: Show the first user
 	In order to see the first user
-	As a visitor
+	As an admin
 	I have to see all users and click on the show of the first user
 	
 	Scenario: Show me the first user

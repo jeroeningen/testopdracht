@@ -2,11 +2,10 @@
 class Admin::UsersController < InheritedResources::Base
 
   include UsersHelper
-  include FancyboxHelper
 
-  actions :index
+  actions :index, :destroy
 
-  before_filter :load_user, :only => [:show, :edit, :update, :destroy]
+  before_filter :load_user, :only => [:show, :edit, :update]
 
   def new
     @user = User.new
@@ -37,11 +36,6 @@ class Admin::UsersController < InheritedResources::Base
     else
       reload_form_in_fancybox
     end
-  end
-
-  def destroy
-    @user.destroy
-    redirect_to admin_users_path
   end
 
   private

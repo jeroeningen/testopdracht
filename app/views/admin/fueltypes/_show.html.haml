@@ -1,0 +1,19 @@
+%h2
+  = "Show fueltype '#{@fueltype.name}'"
+%table
+  %tr
+    %td
+      %label
+        Name:
+    %td
+      = @fueltype.name
+  %tr
+    %td
+      %label
+        Price per liter:
+    %td
+      = @fueltype.price_per_liter
+
+= link_to_fancybox 'Edit this fueltype', edit_admin_fueltype_path(@fueltype)
+|
+= link_to_close_fancybox 'Back'

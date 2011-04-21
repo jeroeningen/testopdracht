@@ -4,8 +4,7 @@ Testopdracht::Application.routes.draw do
 
   namespace :admin do
     root :to => "pages#index"
-    resources :users
-#    match "/user_destroy/:id", :to => "users#destroy", :as => "user_destroy"
+    resources :users, :fueltypes
   end
   match "/address", :to => "addresses#show", :as => "address"
 

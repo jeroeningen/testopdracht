@@ -15,23 +15,28 @@ module ResponseHelper
     eval(model.to_s.capitalize).create.errors.keys
   end
 
-  #check if all the user labels are rendered
-  def should_contain_the_user_labels
-    validated_attributes_for(:user).each do |value|
+  #check if all the labels are rendered
+  def should_contain_the_labels labels = nil
+    (labels ? labels : validated_attributes_for(view_name)).each do |value|
       rendered.should =~ /<label>\n#{value.to_s.capitalize}:\n<\/label>/
     end
   end
 
-  #check if all the userform labels are rendered
-  def should_contain_the_userform_labels
-    validated_attributes_for(:user).each do |value|
-      rendered.should =~ /<label for="user_#{value}">#{value.to_s.capitalize}<\/label>/
+  #check if all the form labels are rendered
+  def should_contain_the_form_labels labels = nil
+    (labels ? labels : validated_attributes_for(view_name)).each do |value|
+      rendered.should =~ /<label for="#{view_name}_#{value}">#{value.to_s.capitalize}<\/label>/
     end
   end
 
-  #prepare the user views
-  def prepare_userviews
-    assign(:user, @jeroen)
+  #determines the view_name
+  def view_name
+    controller.controller_path.gsub("admin/", "").singularize.to_sym
+  end
+
+  #prepare the views, set instance variable in the view
+  def prepare_views var_in_view
+    assign(view_name, var_in_view)
     render
   end
 end

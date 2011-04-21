@@ -1,6 +1,6 @@
 Feature: Edit a user
 	In order to edit a user
-	As a visitor
+	As an admin
 	I have to choose the user, edit the details and save the user
 	
 	Scenario: Edit a user

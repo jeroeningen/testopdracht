@@ -37,6 +37,8 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
     @jeroen = Factory(:jeroen)
     @frank = Factory(:frank)
+    @euro95 = Factory(:euro95)
+    @euro98 = Factory(:euro98)
   end
 end
 

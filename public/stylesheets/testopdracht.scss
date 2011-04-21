@@ -141,6 +141,7 @@ div#fancybox-content {
 	}
 	label {
 		width: $default_label_width;
+	  	margin: 0 0 -2em;
 	}
 	input[type=submit], input[type=button] {
 		float: none;
@@ -162,9 +163,8 @@ div#fancybox-content {
 	div#zipResult {
 		padding: $default_padding 0;
 	}
-	
-	label {
-	  	margin: 0 0 -2em;
+	p#bottom_form_buttons {
+		padding: $default_padding 0 0;
 	}
 }
 

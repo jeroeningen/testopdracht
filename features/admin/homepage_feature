@@ -1,6 +1,6 @@
 Feature: Display admin homepage
 	In order to view the admin homepage
-	As a visitor
+	As an admin
 	I should go to the admin root path
 	
 	Scenario: Display homepage as visitor

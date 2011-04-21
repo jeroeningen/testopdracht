@@ -1,0 +1,11 @@
+= form_for([:admin, @fueltype], :html => { :id => 'fueltypeform'}, :remote => true) do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    = f.text_field :name
+  %p
+    = f.label "Price per liter"
+    = f.text_field :price_per_liter
+  %p#bottom_form_buttons
+    = link_to_close_fancybox 'Back'
+    = f.submit edit_or_update? ? 'Update' : "Create"

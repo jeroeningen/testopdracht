@@ -1,6 +1,6 @@
 Feature: Create a new user
 	In order to create a new user
-	As a visitor
+	As an admin
 	I have to fill in the form for a new user and save it
 	
 	Scenario: Create a new user

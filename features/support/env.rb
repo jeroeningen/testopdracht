@@ -57,4 +57,6 @@ require "#{Rails.root}/spec/factories"
 Before do
   Factory(:jeroen)
   Factory(:rina)
+  Factory(:euro95)
+  Factory(:euro98)
 end
