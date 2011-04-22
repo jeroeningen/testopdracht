@@ -1,3 +1,4 @@
+#fueltypes_controller
 class Admin::FueltypesController < InheritedResources::Base
   actions :index, :destroy
   before_filter :load_fueltype, :only => [:show, :edit, :update]

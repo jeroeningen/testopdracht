@@ -12,19 +12,20 @@ module ResponseHelper
 
   #return attributes with validations
   def validated_attributes_for(model)
-    eval(model.to_s.capitalize).create.errors.keys
+    validated_attributes = eval(model.to_s.capitalize).create.errors.keys
+    validated_attributes.collect{|validated_attribute| validated_attribute.to_s.gsub("_", " ")}
   end
 
   #check if all the labels are rendered
-  def should_contain_the_labels labels = nil
-    (labels ? labels : validated_attributes_for(view_name)).each do |value|
+  def should_contain_the_labels
+    validated_attributes_for(view_name).each do |value|
       rendered.should =~ /<label>\n#{value.to_s.capitalize}:\n<\/label>/
     end
   end
 
   #check if all the form labels are rendered
-  def should_contain_the_form_labels labels = nil
-    (labels ? labels : validated_attributes_for(view_name)).each do |value|
+  def should_contain_the_form_labels
+    validated_attributes_for(view_name).each do |value|
       rendered.should =~ /<label for="#{view_name}_#{value}">#{value.to_s.capitalize}<\/label>/
     end
   end

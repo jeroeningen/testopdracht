@@ -6,7 +6,7 @@ describe "admin/fueltypes/_edit" do
     controller.action_name = "update"
     prepare_views @euro95
     rendered.should =~ /Editing\n'Euro 95'/
-    should_contain_the_form_labels [:name]
+    should_contain_the_form_labels
     rendered.should =~ /Update/
   end
 end
