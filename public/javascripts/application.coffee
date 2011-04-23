@@ -1,8 +1,6 @@
 self.link_to_fancybox_or_not = (url, args) -> 
 	if $('input#enable_lightbox')[0].checked
-		$.fancybox({
-			href: url
-		})
+		$.fancybox({href: url})
 	else
 		document.location = url
 
@@ -17,10 +15,10 @@ self.go_back =->
 $(document).ready -> 
 	$('a.delete_link_fancybox').click ->
 		if $('input#enable_lightbox')[0].checked
-			$.fancybox({
+			$.fancybox
 				href: this + '?enable_lightbox=1',
 				http_method: 'delete'
-			})
+			
 			false
 		else
 			confirm('Are you sure?')
