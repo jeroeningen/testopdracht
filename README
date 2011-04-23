@@ -32,3 +32,6 @@ A. This is probably a performance issue; the Cucumber tests are unfortunately qu
 
 Q. You bundled the gem 'rcov'. How can I use it?
 A. Please run 'rake rcov:rspec' for RSpec and 'rake rcov:cucumber' for Cucumber. Results are written to the directory ~/coverage.
+
+Q. What is the meaning of the file application.coffee?
+A. The javascript is actually written in coffeescript and compiled to javascript using the coffeescript compiler.
