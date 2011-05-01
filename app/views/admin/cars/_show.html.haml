@@ -1,0 +1,14 @@
+%h2
+  = "Show car '#{@car.brand}'"
+%table
+  - [:brand, :model, :price, :cartype].each do |value|
+    %tr
+      %td
+        %label
+          = "#{value.to_s.capitalize}:"
+      %td
+        = @car.send(value)
+
+= link_to_fancybox 'Edit this car', edit_admin_car_path(@car)
+|
+= link_to_close_fancybox 'Back'

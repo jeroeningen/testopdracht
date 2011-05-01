@@ -1,4 +1,4 @@
-HOWTO INSTALL
+=HOWTO INSTALL
 1. Get the project by using the command 'git clone https://github.com/jeroeningen/testopdracht.git'
 2. Create the database.yml in config/database.yml
 4. Install the necessary gems by using command 'bundle install'
@@ -6,7 +6,7 @@ HOWTO INSTALL
 5. Start the server with command 'rails s'
 6. THAT'S IT.
 
-INSTALLATION NOTES
+=INSTALLATION NOTES
 When you're using Linux, before you run the command 'bundle install', make sure you installed the following packages as well:
 - ruby1.8-dev
 - libxml2
@@ -15,20 +15,26 @@ When you're using Linux, before you run the command 'bundle install', make sure 
 - libmysql-ruby
 - libmysqlclient-dev
 
-TESTS
+=TESTS
 This application comes with Cucumber and Rspec tests (including autotest)
+
 To run the Cucumber tests, use the command 'cucumber'. 
+
 To run the Rspec tests, use the command 'autotest'. Note that Growl-notifications are disabled by default, see the file ~/.autotest.
 
-FAQ
+=FAQ
 Q. Help, my Cucumber installation seems to be broken!
+
 A. Please remove the Cucumber gem with the command 'sudo gem uninstall cucumber-rails' and then run the command 'bundle install'.
-
+---
 Q. The commands 'autotest' and/or 'cucumber' are not working.
+
 A. Please use the command 'bundle exec autotest' and 'bundle exec cucumber' instead.
-
+---
 Q. LOSER! Your Cucumber tests are broken! It won't return the area where I'm living, when I enter my zipcode.
-A. This is probably a performance issue; the Cucumber tests are unfortunately quite heavy. Please make sure the Rspec-tests are running well and rerun the Cucumber test while your computer is in idle.
 
+A. This is probably a performance issue; the Cucumber tests are unfortunately quite heavy. Please make sure the Rspec-tests are running well and rerun the Cucumber test while your computer is in idle.
+---
 Q. You bundled the gem 'rcov'. How can I use it?
+
 A. Please run 'rake rcov:rspec' for RSpec and 'rake rcov:cucumber' for Cucumber. Results are written to the directory ~/coverage.

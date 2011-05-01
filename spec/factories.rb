@@ -23,10 +23,17 @@ end
 
 Factory.define :euro95, :class => "fueltype" do |f|
   f.name "Euro 95"
-  f.price_in_cents_per_liter "155"
+  f.price_per_liter "1.55"
 end
 
 Factory.define :euro98, :class => "fueltype" do |f|
   f.name "Euro 98"
-  f.price_in_cents_per_liter "124"
+  f.price_per_liter "1.24"
+end
+
+Factory.define :ford, :class => "Car" do |f|
+  f.brand "Ford"
+  f.model "Focus"
+  f.cartype "Stationwagon"
+  f.price "23995.99"
 end

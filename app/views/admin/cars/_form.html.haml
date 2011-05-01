@@ -1,0 +1,12 @@
+= form_for([:admin, @car], :html => { :id => 'carform'}, :remote => true) do |f|
+  = f.error_messages
+  - [:brand, :model, :price].each do |value|
+    %p
+      = f.label value
+      = f.text_field value, :value => @car.send(value).try(:gsub, "EUR. ", "")
+  %p
+    = f.label :cartype
+    = f.select :cartype, Car::CARTYPES, :include_blank => true
+  %p#bottom_form_buttons
+    = link_to_close_fancybox 'Back'
+    = f.submit edit_or_update? ? 'Update' : "Create"

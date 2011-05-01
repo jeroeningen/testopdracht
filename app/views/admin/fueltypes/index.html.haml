@@ -14,7 +14,7 @@
       %td
         = link_to_fancybox "Edit", edit_admin_fueltype_path(fueltype)
       %td
-        = link_to 'Destroy', admin_fueltype_path(fueltype), :method => :delete, :confirm => "Are you sure?"
+        = link_to 'Destroy', [:admin, fueltype], :method => :delete, :confirm => "Are you sure?"
 
 %br
 = link_to_fancybox 'New fueltype', new_admin_fueltype_path

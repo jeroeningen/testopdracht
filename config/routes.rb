@@ -4,7 +4,7 @@ Testopdracht::Application.routes.draw do
 
   namespace :admin do
     root :to => "pages#index"
-    resources :users, :fueltypes
+    resources :users, :fueltypes, :cars
   end
   match "/address", :to => "addresses#show", :as => "address"
 

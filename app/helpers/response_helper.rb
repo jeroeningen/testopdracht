@@ -26,7 +26,7 @@ module ResponseHelper
   #check if all the form labels are rendered
   def should_contain_the_form_labels
     validated_attributes_for(view_name).each do |value|
-      rendered.should =~ /<label for="#{view_name}_#{value}">#{value.to_s.capitalize}<\/label>/
+      rendered.should =~ /<label for="#{view_name}_#{value.gsub(" ", "_")}">#{value.to_s.capitalize}<\/label>/
     end
   end
 

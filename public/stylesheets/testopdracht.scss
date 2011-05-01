@@ -48,6 +48,9 @@ body {
 	  	width: $default_label_width;
 		background-color: red;
 	}
+	select {
+		margin: -5px 0 0 25%;
+	}
 }
 
 div#wrapper {
@@ -147,10 +150,13 @@ div#fancybox-content {
 		float: none;
 		width: auto;
 	}
-	input {
+	input{
 		margin: -5px 0 0;
 		float: right;
 		width: 75%;
+	}
+	p select {
+		margin: 0 0 0 29px;
 	}
 	div#destroy_user_form input {
 		float: left;

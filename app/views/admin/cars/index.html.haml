@@ -1,0 +1,20 @@
+%h1
+  Listing cars
+
+%table
+  %tr
+    %th
+      Name
+  - @cars.each do |car|
+    %tr
+      %td
+        = car.brand
+      %td
+        = link_to_fancybox 'Show', admin_car_path(car)
+      %td
+        = link_to_fancybox "Edit", edit_admin_car_path(car)
+      %td
+        = link_to 'Destroy', [:admin, car], :method => :delete, :confirm => "Are you sure?"
+
+%br
+= link_to_fancybox 'New car', new_admin_car_path

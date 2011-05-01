@@ -11,7 +11,7 @@ Feature: Edit a fueltype
 		
 		#actually edit the fueltype
 		When I fill in "fueltype_name" with "Euro 96"
-		When I fill in "fueltype_price_per_liter" with "177"
+		When I fill in "fueltype_price_per_liter" with "1,77"
 		And I press "Update"
 		Then I should not see the lightbox
 		And I should not see "Euro 95"

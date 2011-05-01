@@ -59,4 +59,5 @@ Before do
   Factory(:rina)
   Factory(:euro95)
   Factory(:euro98)
+  Factory(:ford)
 end

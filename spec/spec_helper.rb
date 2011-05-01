@@ -2,6 +2,7 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'acts_as_price_helper'
 
 #use factory_girl and load factories
 require "#{Rails.root}/spec/factories"
@@ -30,6 +31,7 @@ RSpec.configure do |config|
   
   #load helper methods
   config.include(ResponseHelper)
+  config.include(ActsAsPriceHelper)
 
   #Clean the databsae and use the factoies
   config.before(:each) do
@@ -39,6 +41,6 @@ RSpec.configure do |config|
     @frank = Factory(:frank)
     @euro95 = Factory(:euro95)
     @euro98 = Factory(:euro98)
+    @ford = Factory(:ford)
   end
 end
-

@@ -5,25 +5,32 @@ gem 'rails', '3.0.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql2', '0.2.7'
 gem 'geonames'
 gem 'hpricot'
 gem 'inherited_resources', '>= 1.2.1'
-gem 'haml'
+gem 'haml', '>= 3.1.1'
+gem 'sass', '>= 3.1.1'
+gem 'acts_as_price', '>= 0.2.0'
 
 #only use in test envirnoment
 group :test do
 	gem 'cucumber-rails'
 	gem 'factory_girl'
-	gem 'capybara'
-	gem 'database_cleaner'
-	gem 'rspec-rails'
+	gem 'capybara', '>= 0.4.1.2'
+	gem 'database_cleaner', '>= 0.6.7'
+	gem 'rspec-rails', '>= 2.5.0'
 	gem 'shoulda-matchers'
-	gem 'autotest'
-	gem 'autotest-growl'
-	gem 'rcov'
-	gem 'metrical'
+	gem 'autotest', '>= 4.4.6'
+	gem 'rcov', '>= 0.9.9'
+	gem 'metrical', '>= 0.0.5'
+	gem 'activerecord-nulldb-adapter', '>= 0.2.1'
 end
+
+#rake tasks for jasmine needs the development envirnoment
+#group :development, :test do
+#	gem 'jasmine'
+#end
 
 # Use unicorn as the web server
 # gem 'unicorn'
