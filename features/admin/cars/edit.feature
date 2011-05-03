@@ -32,7 +32,7 @@ Feature: Edit a car
 		Then I should see the lightbox
 		And I should not see "Ford USA"
 		And I should see "Ford"
-		And I should see "3 errors prohibited"
+		And I should see "2 errors prohibited"
 		
 		When I fill in "car_brand" with "Ford USA"
 		And I fill in "car_price" with "26099,95"

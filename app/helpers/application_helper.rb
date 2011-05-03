@@ -2,7 +2,7 @@
 module ApplicationHelper
   #check if in admin routing
   def admin_routing?
-    controller.request.path.starts_with? "/admin"
+    controller.request.path.include? "/admin"
   end
 
   #checks if you're in the edit or update action
