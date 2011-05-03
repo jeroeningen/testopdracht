@@ -11,7 +11,8 @@ gem 'hpricot'
 gem 'inherited_resources', '>= 1.2.1'
 gem 'haml', '>= 3.1.1'
 gem 'sass', '>= 3.1.1'
-gem 'acts_as_price', '>= 0.2.0'
+gem 'acts_as_price', '>= 0.2.2'
+gem 'jammit', '>= 0.6.0'
 
 #only use in test envirnoment
 group :test do
