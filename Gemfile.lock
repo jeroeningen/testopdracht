@@ -243,6 +243,7 @@ DEPENDENCIES
   metrical (>= 0.0.5)
   mysql2 (= 0.2.7)
   rails (= 3.0.7)
+  rake
   rcov (>= 0.9.9)
   rspec-rails (>= 2.5.0)
   sass (>= 3.1.1)
