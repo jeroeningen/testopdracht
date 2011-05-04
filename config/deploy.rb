@@ -21,6 +21,7 @@ namespace :deploy do
   end
   task :bundle_install do
     run "export PATH=$PATH:/var/lib/gems/1.8/bin/ && cd #{release_path} && bundle install --deployment --without test"
+    run 'rake spree:install'
   end
 end
 
