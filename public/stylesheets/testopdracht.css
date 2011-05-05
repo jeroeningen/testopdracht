@@ -40,7 +40,8 @@ body {
     margin: -5px 0 0 25%; }
 
 div#wrapper {
-  width: 900px; }
+  width: 900px;
+  margin: auto; }
   div#wrapper div#header div#logo {
     padding: 10px; }
   div#wrapper div#header div#menu {
