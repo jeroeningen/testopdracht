@@ -1,28 +1,35 @@
+require File.expand_path('../deploy/capistrano_database', __FILE__)
+
 set :application, "testopdracht"
 set :repository,  "https://jeroeningen@github.com/jeroeningen/testopdracht.git"
 
+set :stages, %w{development production}
+set :default_stage, "development"
+require 'capistrano/ext/multistage'
+
 set :scm, :git
-set :deploy_to, "/rails/testopdracht"
 
 role :web, "localhost", "192.168.168.129"
 role :app, "localhost", "192.168.168.129"
 role :db, "localhost", "192.168.168.129", :primary => true
-
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  task :database_config_created do
+    abort "Please first run 'cap <stage> deploy:setup'" unless File.exists?("#{shared_path}/config/database.yml")
   end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(release_path,'tmp','restart.txt')}"
+  end
+  
   task :bundle_install do
+    run " cp -R #{previous_release}/vendor/bundle #{release_path}/vendor" if File.exists?("#{previous_release}/vendor/bundle") if previous_release
     run "export PATH=$PATH:/var/lib/gems/1.8/bin/ && cd #{release_path} && bundle install --deployment"
   end
   task :symlink_shared do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
-  task :db_migrate do
-    run "export PATH=$PATH:/var/lib/gems/1.8/bin/ && cd #{release_path} && bundle exec rake RAILS_ENV=production db:migrate"
-  end
 end
 
-after 'deploy:update_code', "deploy:bundle_install", 'deploy:symlink_shared', "deploy:db_migrate", "deploy:restart"
+before "deploy:update_code", "deploy:database_config_created"
+after 'deploy:update_code', "deploy:bundle_install", 'deploy:symlink_shared', "deploy:db_migrate", "deploy:symlink_passenger", "deploy:restart"

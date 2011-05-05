@@ -44,12 +44,14 @@ GEM
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
     builder (2.1.2)
-    capistrano (2.5.21)
+    capistrano (2.6.0)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.0.0)
+      net-ssh-gateway (>= 1.1.0)
+    capistrano-ext (1.2.1)
+      capistrano (>= 1.0.0)
     capybara (0.4.1.2)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -98,7 +100,7 @@ GEM
       ruby_parser (~> 2.0)
       sexp_processor (~> 3.0)
     geonames (0.2.2)
-    gherkin (2.3.6)
+    gherkin (2.3.7)
       json (>= 1.4.6)
     haml (3.1.1)
     has_scope (0.5.0)
@@ -231,6 +233,7 @@ DEPENDENCIES
   acts_as_price (>= 0.2.2)
   autotest (>= 4.4.6)
   capistrano
+  capistrano-ext
   capybara (>= 0.4.1.2)
   cucumber-rails
   database_cleaner (>= 0.6.7)

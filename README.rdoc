@@ -15,6 +15,22 @@ When you're using Linux, before you run the command 'bundle install', make sure 
 - libmysql-ruby
 - libmysqlclient-dev
 
+
+=HOWTO DEPLOY
+By default this application uses Capistrano and Phusion Passenger (mod_rails)
+This application includes deploy scripts for production and development environment. Note that Capistrano creates the databases for you, you do not need to create it yourself. Although you have to create your Apache directive yourself. It should look like as follows:
+    RailsBaseURI /testopdracht_production
+    <Directory /var/www/testopdracht_production>
+        Options -MultiViews
+    </Directory> 
+
+    RailsBaseURI /testopdracht_development
+    <Directory /var/www/testopdracht_development>
+	RailsEnv development
+        Options -MultiViews
+    </Directory> 
+
+
 =TESTS
 This application comes with Cucumber and Rspec tests (including autotest)
 
