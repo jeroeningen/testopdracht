@@ -38,6 +38,8 @@ To run the Cucumber tests, use the command 'cucumber'.
 
 To run the Rspec tests, use the command 'autotest'. Note that Growl-notifications are disabled by default, see the file ~/.autotest.
 
+Cucumber is now intergrated in the command 'autotest'. The autotest assumes you have a virtual frame buffer running on 'DISPLAY=:99'
+
 =FAQ
 Q. Help, my Cucumber installation seems to be broken!
 
