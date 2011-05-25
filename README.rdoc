@@ -14,7 +14,7 @@ When you're using Linux, before you run the command 'bundle install', make sure 
 - libxml2-dev
 - libmysql-ruby
 - libmysqlclient-dev
-
+- xvfb
 
 =HOWTO DEPLOY
 By default this application uses Capistrano and Phusion Passenger (mod_rails)
@@ -38,7 +38,8 @@ To run the Cucumber tests, use the command 'cucumber'.
 
 To run the Rspec tests, use the command 'autotest'. Note that Growl-notifications are disabled by default, see the file ~/.autotest.
 
-Cucumber is now intergrated in the command 'autotest'. The autotest assumes you have a virtual frame buffer running on 'DISPLAY=:99'
+Cucumber is now intergrated in the command 'autotest'. The autotest assumes you have a virtual frame buffer running on 'DISPLAY=:99'. 
+To initialize the virtual frame buffer you can use the script 'xvfb' that is included in the 'script' directory. Note that this script requires the package 'xvfb'
 
 =FAQ
 Q. Help, my Cucumber installation seems to be broken!

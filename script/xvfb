@@ -1,0 +1,44 @@
+#!/bin/bash 
+# 
+# /etc/rc.d/init.d/xvfb 
+# 
+# Author: Brian Connolly (LabKey.org) 
+# 
+# chkconfig: 345 98 90 
+# description: Starts Virtual Framebuffer process to enable the  
+# LabKey server to use R. 
+# 
+#
+    XVFB_OUTPUT=/var/log/xvfb.log 
+XVFB=/usr/bin/Xvfb 
+XVFB_OPTIONS=":99 -ac -screen 0 1024x768x16"
+    # Source function library. 
+#/lib/lsb/init-functions
+
+start() { 
+echo -n "Starting : X Virtual Frame Buffer " 
+$XVFB $XVFB_OPTIONS >>$XVFB_OUTPUT 2>&1& 
+RETVAL=$? 
+echo 
+return $RETVAL 
+}
+    stop() { 
+echo -n "Shutting down : X Virtual Frame Buffer" 
+echo 
+pkill Xvfb 
+echo 
+return 0 
+}
+    case "$1" in 
+start) 
+start 
+;; 
+stop) 
+stop 
+;; 
+*) 
+echo "Usage: xvfb {start|stop}" 
+exit 1 
+;; 
+esac 
+exit $?
